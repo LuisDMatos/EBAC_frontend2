@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+/* Utilização da variavel*/
+body {
+    background-color: @backgroundColor;
+}
+
+li {
+    list-style: none;
+}
+
+/* utilização do mixin*/
+.container {
+    max-width: 1024px;
+    .width();
+    margin: 0 auto;
+}
+
+/* Utilização dos mapas*/
+header {
+    background-color: #colors[headerColor];
+    position: sticky;
+    top: 0;
+    left: 0;
+}
